@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="app/app-config.js"></script>
+    <script src="app/controller/index-controller-style.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Index Treinamento Angular</title>
+
+    <style>
+        .verde {
+            background-color: green;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body ng-app="rw">
+
+<div ng-controller="IndexControllerStyle">
+
+    COR:<input ng-model="myStyle.backgroundColor"><br>
+    ALTURA:<input ng-model="myStyle.height"><br>
+    LARGURA:<input ng-model="myStyle.width"><br>
+    <div ng-style="myStyle"></div><br>
+
+    NOME:<input ng-model="nome"><br>
+    <div style="width:100px;height:100px;" ng-class="myClass"></div>
+
+</div>
+
+</body>
+</html>
