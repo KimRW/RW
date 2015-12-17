@@ -1,11 +1,11 @@
 {
-  "name": "rw",
+  "name": "cursoangular",
   "version": "1.0.0",
-  "description": "",
+  "description": "Curso de angularjs R&W",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Alessandro Santos",
   "license": "ISC"
 }

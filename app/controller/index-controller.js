@@ -1,15 +1,15 @@
 /**
- * Created by JCG-003 on 14/12/2015.
+ * Created by algus on 14/12/2015.
  */
+
 angular.module('rw')
     .controller('IndexController', IndexController);
 
-function IndexController($scope){
-    $scope.nome =  'Fabão';
+function IndexController($scope) {
+    $scope.nome = 'Alessandro';
+    $scope.onClickTeste = onClickTeste;
 
-    $scope.onClickTest = onClickTest;
-
-    function onClickTest() {
-        $scope.nome = 'FABÃO ALTEROU TUDO';
+    function onClickTeste(){
+        $scope.nome = 'Alteração via click';
     }
-};
+}

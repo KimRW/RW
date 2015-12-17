@@ -6,11 +6,10 @@
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
         <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.min.css"/>
-
-
+        <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.min.css"/>
         <title></title>
     </head>
-    <body ng-app="rw" class="container" ng-controller="IndexController4">
+    <body ng-app="rw" class="container" ng-controller="IndexController5">
         <form   novalidate name="myForm">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -62,27 +61,7 @@
                         </div>
                     </div>
 
-                    <table class="table">
-                        <thead>
-                            <th>Nome</th>
-                            <th>Email</th>
-                            <th>Sexo</th>
-                            <th>Nascimento</th>
-                            <th>Opções</th>
-                        </thead>
-                        <tbody>
-                            <tr ng-repeat="item in listaDePessoas track by item.nome">
-                                <td><span ng-bind="item.nome"></span> </td>
-                                <td><span ng-bind="item.email"></span> </td>
-                                <td><span ng-bind="item.sexo"></span> </td>
-                                <td><span ng-bind="item.data | date: 'dd/MM/yyyy'"></span> </td>
-                                <td>
-                                    <button class="btn btn-primary" ng-click="editar(item)"><i class="fa fa-pencil"></i> </button>
-                                    <button class="btn btn-danger" ng-click="excluir(item)"><i class="fa fa-trash"></i> </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div ui-grid="gridOptions"></div>
 
                 </div>
                 <div class="panel-footer">
@@ -98,10 +77,11 @@
     <script src="bower_components/angular-messages/angular-messages.min.js"></script>
     <script src="bower_components/angular-toastr/dist/angular-toastr.min.js"></script>
     <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
     <script src="app/app-conf.js"></script>
 
     <!-- controller -->
-    <script src="app/controller/IndexController4.js"></script>
+    <script src="app/controller/IndexController5.js"></script>
     <!-- service -->
     <script src="app/service/alert-service.js"></script>
 </html>
